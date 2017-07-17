@@ -32,7 +32,7 @@ def deletepicture():
         # conn = psycopg2.connect(database = os.environ.get('DB_NAME'), user = os.environ.get('DB_USER'), password = os.environ.get('DB_PASSWORD'))
         cur = conn.cursor()
         sql = 'DELETE FROM pictures WHERE pictureid = %s'
-        params = (request.json['picturid'],)
+        params = (request.json['pictureid'],)
         print('deleted picture with pictureid ', request.json['pictureid'])
         cur.execute(sql, params)
         conn.commit()
