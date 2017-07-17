@@ -11,7 +11,7 @@ from timed.inflation import Inflate
 # from timed.inflation import Typewriter
 # from timed.inflation import Dog
 import threading
-
+from time import sleep
 # from celeryconfig import make_celery
 
 import urlparse
@@ -70,6 +70,8 @@ cur.execute(r)
 conn.commit()
 conn.close()
 
+
+sleep(10)
 
 
 i = Inflate('pants')
