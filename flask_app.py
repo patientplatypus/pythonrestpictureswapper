@@ -18,6 +18,9 @@ import urlparse
 print(urlparse, type(urlparse)
 
 
+# gunicorn hello:app
+# web: gunicorn hello:app
+# web: waitress-serve --port=$PORT flask_app.wsgi:application
 
 
 app = Flask(__name__)
