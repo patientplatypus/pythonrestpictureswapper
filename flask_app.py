@@ -15,7 +15,7 @@ import threading
 # from celeryconfig import make_celery
 
 import urlparse
-print(urlparse, type(urlparse)
+print(urlparse, type(urlparse))
 
 
 # gunicorn hello:app
