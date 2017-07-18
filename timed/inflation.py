@@ -67,7 +67,7 @@ class Inflate:
                 cur.execute(sql, params)
                 conn.commit()
             conn.close()
-            sleep(300000)
+            sleep(86400)
     def timermethod(self):
         h="hello there "
         t = threading.Thread(target=self.inflatemethod, args=())
