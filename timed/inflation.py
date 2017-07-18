@@ -73,7 +73,7 @@ class Inflate:
         t = threading.Thread(target=self.inflatemethod, args=())
         t.start()
 
-
+#
 #     totalmoney = totalmoney + userdata[x][2]
 # for x in range(0, len(usermoney)):
 #     usermoney[x]['percentage'] = 100 * usermoney[x]['money'] / totalmoney
